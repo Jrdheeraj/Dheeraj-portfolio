@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  background-image: 
+    linear-gradient(rgba(255, 90, 31, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 90, 31, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.glow-orange {
+  box-shadow: 0 0 20px rgba(255, 90, 31, 0.3),
+              0 0 40px rgba(255, 90, 31, 0.2),
+              0 0 60px rgba(255, 90, 31, 0.1);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 90, 31, 0.5);
+}
+
+.glass-panel {
+  background: rgba(11, 11, 15, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 90, 31, 0.2);
+}
+
+.depth-shadow {
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.8),
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 90, 31, 0.3);
+}
+
+.perspective-container {
+  perspective: 1000px;
+}
+
+.transform-3d {
+  transform-style: preserve-3d;
+}
+
+/* Smooth transitions for interactive elements */
+button, a, .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+button:hover, a:hover {
+  transform: translateY(-2px);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0b0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5a1f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7a3f;
+}

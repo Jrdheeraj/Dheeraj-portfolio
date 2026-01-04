@@ -1,0 +1,99 @@
+# See https://help.github.com/articles/ignoring-files/
+
+# === WINDOWS SYSTEM FILES (TOP PRIORITY) ===
+AppData/
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+Contacts/
+Favorites/
+Links/
+Searches/
+Saved Games/
+$RECYCLE.BIN/
+NTUSER.DAT*
+ntuser.*
+desktop.ini
+Thumbs.db
+*.lnk
+
+# === PARENT DIRECTORIES (STOPS SCANNING UP) ===
+../
+../../
+../../../
+
+# === IDE & EDITORS ===
+.idea/
+.vscode/
+.cursor/
+.codeium/
+.windsurf/
+
+# === DEPENDENCIES ===
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# === TESTING & BUILDS ===
+/coverage
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+/build
+dist/
+
+# === ENVIRONMENT & SECRETS ===
+.env
+.env.local
+*token.json*
+*credentials.json*
+
+# === LOGS & DEBUG ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dump.rdb
+
+# === SYSTEM & OS ===
+.DS_Store
+*.pem
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# === DEVELOPMENT TOOLS ===
+chainlit.md
+.chainlit
+.ipynb_checkpoints/
+.ac
+.cache/
+
+# === DEPLOYMENT ===
+.vercel
+
+# === DATA & DATABASES ===
+agenthub/agents/youtube/db
+
+# === ARCHIVES & LARGE FILES ===
+**/*.zip
+**/*.tar.gz
+**/*.tar
+**/*.tgz
+*.pack
+*.deb
+*.dylib
+
+# === MOBILE ===
+android-sdk/
