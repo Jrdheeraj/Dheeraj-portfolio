@@ -69,9 +69,6 @@ const Hero = () => {
                     <h3 className="text-white text-base md:text-lg lg:text-xl font-black leading-tight">
                       PRODUCT<br/>DESIGNER
                     </h3>
-                    <p className="text-white/50 text-[6px] uppercase tracking-widest mt-1.5">
-                      @2024. OMB AND SCALING UP AT ALOUD
-                    </p>
                   </div>
                 </div>
 
@@ -80,9 +77,6 @@ const Hero = () => {
                   <div className="text-center">
                     <p className="text-white text-xs md:text-sm font-bold uppercase tracking-[0.1em] mb-0.5">
                       DHEERAJ
-                    </p>
-                    <p className="text-white/50 text-[6px] uppercase tracking-widest">
-                      BUILT ON IER.AI/KANPUR
                     </p>
                   </div>
                 </div>

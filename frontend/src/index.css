@@ -127,3 +127,23 @@ code {
     transform: translateY(-20px) scale(0.92);
   }
 }
+/* =================== GRID OVERLAY =================== */
+
+:root {
+  --grid-size: 48px;
+  --grid-line: rgba(255,255,255,0.04);
+}
+
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  opacity: 0.35;
+}
+
+

@@ -1,3 +1,12 @@
+html, body, #root, .App {
+  position: relative;
+}
+.App {
+  position: relative;
+  z-index: 2;
+}
+
+
 * {
   margin: 0;
   padding: 0;
