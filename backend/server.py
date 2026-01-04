@@ -84,6 +84,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-@app.on_event("shutdown")
+@app.on_event("shutdown")  # Keep for now, works
 async def shutdown_db_client():
     client.close()

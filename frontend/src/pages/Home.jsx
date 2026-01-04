@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -12,17 +13,29 @@ import GridOverlay from '../components/GridOverlay';
 
 const Home = () => {
   return (
-    <div className="relative bg-[#0b0b0f] min-h-screen">
+    <div className="relative min-h-screen bg-[#0b0b0f] text-white overflow-x-hidden">
+
+      {/* Subtle background grid */}
       <GridOverlay />
-      <Navigation />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Mindset />
-      <Contact />
-      <Footer />
+
+      {/* Content layer */}
+      <div className="relative z-10">
+
+        <Navigation />
+
+        <main className="space-y-32">
+          <Hero />
+          <About />
+          <Projects />
+          <Skills />
+          <Experience />
+          <Mindset />
+          <Contact />
+        </main>
+
+        <Footer />
+
+      </div>
     </div>
   );
 };
